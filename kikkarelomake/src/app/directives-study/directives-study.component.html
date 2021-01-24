@@ -2,6 +2,7 @@
   <li *ngFor="let book of books">{{ book }}</li>
 </ul>
 
+<!-- {{}}: interpolation, []: property binding, (): event binding -->
 <button [disabled]="loaded" (click)="load()">Load info</button>
 <div *ngIf="loaded">LOADED!</div>
 
