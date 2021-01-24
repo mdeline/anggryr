@@ -8,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesStudyComponent implements OnInit {
 
   books;
+  loaded;
 
   constructor() {
-    this.books = ['Infinite Jest', 'The Color Purple']
+    this.books = ['Infinite Jest', 'The Color Purple'],
+    this.loaded = false;
    }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+
+  load() {
+    this.loaded = true;
   }
 
 }

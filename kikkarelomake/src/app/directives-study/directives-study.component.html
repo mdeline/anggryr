@@ -1,1 +1,7 @@
-<p *ngFor="let book of books">{{ book }}</p>
+<ul>
+  <li *ngFor="let book of books">{{ book }}</li>
+</ul>
+
+<button [disabled]="loaded" (click)="load()">Load info</button>
+<div *ngIf="loaded">LOADED!</div>
+
